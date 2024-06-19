@@ -1,0 +1,78 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('/static/img/loan1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #333;
+}
+
+.navbar {
+    background-color: #343a40;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 1.1rem;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    color: #343a40;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.about h2 {
+    text-align: center;
+    color: white;
+    background-color: #333;
+}
+
+.about p {
+    text-align: center;
+    color: white;
+    background-color: #333;
+}
+
+.pred{
+    text-align: center;
+    color: black;
+}
+
+.pred button{
+    text-align: center;
+    color: black;
+    width: 250px;
+    background-color: blue;
+}

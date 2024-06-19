@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>LoanApp</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/" class="logo">LoanApp</a>
+        <div>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/predict">Prediction</a>
+        </div>
+    </div>
+    <h1><b style="color: black;"><center>{{msg1}}</center></b></h1>
+
+    <div class="pred">
+        <form method="POST" action="{{url_for('predict')}}">
+            <label>customer_id</label>
+            <br>
+            <input type="text" name="customer_id" placeholder="customer_id">
+            <br>
+            <label>customer_age</label>
+            <br>
+            <input type="text" name="customer_age" placeholder="customer_age">
+            <br>
+            <label>customer_income</label>
+            <br>
+            <input type="text" name="customer_income" placeholder="customer_income">
+            <br>
+            <label>home_ownership</label>
+            <br>
+            <input type="text" name="home_ownership" placeholder="home_ownership">
+            <br>
+            <label>employment_duration</label>
+            <br>
+            <input type="text" name="employment_duration" placeholder="employment_duration">
+            <br>
+            <label>loan_intent</label>
+            <br>
+            <input type="text" name="loan_intent" placeholder="loan_intent">
+            <br>
+            <label>loan_grade</label>
+            <br>
+            <input type="text" name="loan_grade" placeholder="loan_grade">
+            <br>
+            <label>loan_amnt</label>
+            <br>
+            <input type="text" name="loan_amnt" placeholder="loan_amnt">
+            <br>
+            <label>loan_int_rate</label>
+            <br>
+            <input type="text" name="loan_int_rate" placeholder="loan_int_rate">
+            <br>
+            <label>term_years</label>
+            <br>
+            <input type="text" name="term_years" placeholder="term_years">
+            <br>
+            <label>historical_default</label>
+            <br>
+            <input type="text" name="historical_default" placeholder="historical_default">
+            <br>
+            <label>cred_hist_length</label>
+            <br>
+            <input type="text" name="cred_hist_length" placeholder="cred_hist_length">
+            <br>
+            <br>
+            <button type="submit">submit</button>
+        </form>
+    </div>
+    
+
+    </div>
+</body>
+</html>
